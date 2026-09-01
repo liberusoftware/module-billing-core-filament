@@ -24,6 +24,8 @@ use Liberu\Billing\Core\Models\BillingAccount;
 
 final class BillingAccountResource extends Resource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     protected static ?string $model = BillingAccount::class;
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-credit-card';

@@ -17,6 +17,8 @@ use Liberu\Billing\Core\Models\BillingTaxProfile;
 
 final class BillingTaxProfileResource extends BillingCoreResource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     protected static ?string $model = BillingTaxProfile::class;
 
     public static function table(Table $table): Table

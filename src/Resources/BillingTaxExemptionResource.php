@@ -11,6 +11,8 @@ use Liberu\Billing\Core\Models\BillingTaxExemption;
 
 final class BillingTaxExemptionResource extends BillingCoreResource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     protected static ?string $model = BillingTaxExemption::class;
 
     public static function getPages(): array

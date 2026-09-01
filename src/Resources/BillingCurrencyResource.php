@@ -17,6 +17,8 @@ use Liberu\Billing\Core\Models\BillingCurrency;
 
 final class BillingCurrencyResource extends BillingCoreResource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     protected static ?string $model = BillingCurrency::class;
 
     public static function table(Table $table): Table
