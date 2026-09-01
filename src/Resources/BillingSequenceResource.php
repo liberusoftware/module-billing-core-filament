@@ -11,6 +11,8 @@ use Liberu\Billing\Core\Models\BillingSequence;
 
 final class BillingSequenceResource extends BillingCoreResource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     protected static ?string $model = BillingSequence::class;
 
     public static function getPages(): array

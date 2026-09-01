@@ -24,7 +24,7 @@ final class BillingCoreFilamentPlugin implements Plugin
 
     public function getId(): string
     {
-        return 'liberu-billing-core';
+        return 'module-billing-core-filament';
     }
 
     public function register(Panel $panel): void

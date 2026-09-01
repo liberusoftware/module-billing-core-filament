@@ -26,7 +26,7 @@ abstract class BillingCoreResource extends Resource
 {
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
-    protected static UnitEnum|string|null $navigationGroup = 'Billing Core';
+    protected static UnitEnum|string|null $navigationGroup = 'Billing Operations';
 
     public static function form(Schema $schema): Schema
     {
